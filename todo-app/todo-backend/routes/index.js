@@ -3,6 +3,9 @@ const router = express.Router();
 
 const configs = require('../util/config')
 
+const redis = require('../redis')
+const { getAsync } = require('../redis/index')
+
 let visits = 0
 
 /* GET index data. */
@@ -14,5 +17,6 @@ router.get('/', async (req, res) => {
     visits
   });
 });
+
 
 module.exports = router;

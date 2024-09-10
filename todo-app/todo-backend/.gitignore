@@ -59,3 +59,10 @@ typings/
 
 # next.js build output
 .next
+
+# Ignore MongoDB data directory
+mongo_data/
+
+
+# Ignore Redis data directory
+redis_data/
